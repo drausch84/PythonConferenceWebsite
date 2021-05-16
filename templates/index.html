@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block title %}Denver Writer's Conference{% endblock %}
+{% block head %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/webdefault.css') }}"/>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9b2061ce-1823-47c5-be5a-ec69f425509d";
+    (function(){d=document;s=d.createElement("script");
+    s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+    </script>
+{% endblock %}
+{% block content %}
+    <h1>
+        Denver Writer's Conference 2021
+    </h1>
+    <div class = "flex-container-1">
+        <div class ="flex-child-1">
+            <img src ="{{ url_for('static', filename = 'images/conferenceroom.gif') }}" class = "conference-img"
+                alt = "writers-conference">
+            <h2 class = "workshop-h">
+                Writing Workshops
+            </h2>
+            <p class ="workshop-p">
+                Our featured authors and industry professionals offer workshops guaranteed to help you become a better writer.&nbsp;
+                Have you always wanted to write a series of short stories?&nbsp;Are you needing some guidance on how to craft
+                descriptive settings for your novel?&nbsp;Do you feel like your stories could benefit from better character
+                development?&nbsp;These are just a few of the issues that our workshops can help you with.&nbsp; Click on the link
+                below to look at the workshop schedule and register.
+            </p>
+            <br>
+            <h2 class = "workshop-registration-h">
+                Workshop Registration
+            </h2>
+            <p class = "workshop-link">
+                Price: $325 for 3 workshops
+                <br>
+                <a href = "{{ url_for('workshop') }}" class = "workshop-button">Workshop Schedule</a>
+            </p>
+        </div>
+        <div class ="flex-child-2">
+            <h2 class = "conf-date">
+                August 21 - 22,&nbsp;2021
+            </h2>
+            <p class = "about-p">
+                It's that time of year again!&nbsp;It's time for the annual Denver Writer's Conference held at The Colorado
+                Convention Center.&nbsp;The Denver Writer's Conference is a perfect chance for established and aspiring writers
+                of all genres to hone their skills and learn from some of the best and brightest in the industry.&nbsp;Choose from
+                a variety of fully-catered workshops presented by industry professionals and renowned author presenters.
+            </p>
+            <h2 class = "registration-h">
+                Register Today
+            </h2>
+            <p class = "registration-p">
+                The Denver Writer's Conference is scheduled for August 21 -22,&nbsp;2021 but we also offer attendees to choose
+                one day passes.&nbsp;This is an opportunity to learn from industry professionals as well as getting an opportunity
+                to network with other attendees and literary agents.
+            </p>
+            <h2 class = "registration-link-h">
+                Registration Open Now
+            </h2>
+            <p class = "registration-link-p">
+                Early Bird Registration: $175<br>
+                Late Registration: $200 <i>(after May 12,&nbsp;2021)</i><br>
+                <br>
+                <a href = "{{ url_for('registration') }}" class = "registration-button">Register Today</a>
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class = "flex-container-2">
+        <div class ="attendee-info">
+            <h2 class = "attendee-h">
+                Attendee Information
+            </h2>
+            <p class = "attendee-p">
+                All attendees will have the opportunity to pitch ideas to agents,&nbsp;participate in critique sessions,&nbsp;
+                and network with their peers.&nbsp;Some of the agents/editors participating in the conference include: Ryan Shasman,&nbsp;
+                Greg Yanis,&nbsp;Stefanie Holden.&nbsp;Rebecca Housman,&nbsp;and Lucy Stiles.&nbsp;For a full list of participants, email
+                us at <a href = "mailto:DenverConventionCenter@fakeemail.com" class = "email-attendee">Denver Writer's Conference</a>.<br>
+                <br>
+                We ask all attendees to refrain from the use of any recording equipment during any of the sessions or workshops.&nbsp;
+                Failure to comply may result in expulsion from the conference without a refund.<br>
+                <br>
+                Download the attendee guide and pamphlet at <a href = "#" class = "attendee-pamphlet">DWC Pamphlet and Guide</a>
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class= "flex-container-3">
+        <h2 class = "authors-h">
+            Participating Authors
+        </h2>
+        <section class = "author-card-row">
+
+            <article class = "author-card">
+                <img src="{{ url_for('static', filename='images/stephenking.gif') }}" alt = "stephen-king-img">
+                <h3 class = "author-name">
+                    Stephen King
+                </h3>
+                <p class = "author-bio">
+                    Author of It, Salem's Lot, Carrie, The Shinning
+                </p>
+            </article>
+            <article class = "author-card">
+                <img src="{{ url_for('static', filename='images/jkrowling.gif') }}" alt = "jk-rowling-img">
+                <h3 class = "author-name">
+                    JK Rowling
+                </h3>
+                <p class = "author-bio">
+                    Author of the Harry Potter series
+                </p>
+            </article>
+            <article class = "author-card">
+                <img src="{{ url_for('static', filename='images/neilgaiman.gif') }}" alt = "neil-gaiman-img">
+                <h3 class = "author-name">
+                    Neil Gaiman
+                </h3>
+                <p class = "author-bio">
+                    Author of American Gods, Coraline, The Graveyard Book
+                </p>
+            </article>
+            <article class = "author-card">
+                <img src="{{ url_for('static', filename='images/davidsedaris.gif') }}" alt = "david-sedaris-img">
+                <h3 class = "author-name">
+                    David Sedaris
+                </h3>
+                <p class = "author-bio">
+                    Author of Holidays on Ice, Me Talk Pretty One Day, Calypso
+                </p>
+            </article>
+        </section>
+   </div>
+{% endblock %}

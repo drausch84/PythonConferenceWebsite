@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Keynote Speakers{% endblock %}
+{% block content %}
+    <h1>
+        Denver Writer's Conference Keynote Speakers
+    </h1>
+    <div class = "flex-container-1">
+        <div class = "keynote-block">
+            <section class = "keynote-row">
+                <article class = "keynote-card">
+                    <img src="{{ url_for('static', filename='images/nathanrichardson.gif') }}" alt = "keynote-speaker-1"
+                        class = "keynote-speaker">
+                    <a class = "speaker-name">
+                        Nathan Richardson
+                    </a>
+                    <p class = "speaker-descr">
+                        A well known author who specializes in medical thrillers and mystery novels, Nathan Richardson has
+                        earned his fair share of critical acclaim.  Many critics have praised Richardson's descriptive characters
+                        and well-paced plots of his novels which has earned him two Edgar Awards.  His catalogue includes the
+                        <i>Beneath the Red Gown</i> medical thriller series, <i>What the Crows Saw</i>, <i>Veil of the Maidens</i>,
+                        and <i>The Deepest Grave</i>.
+                    </p>
+                </article>
+                <article class = "keynote-card">
+                    <img src="{{ url_for('static', filename='images/shaynawilliams.gif') }}" alt = "keynote-speaker-2"
+                        class = "keynote-speaker">
+                    <a class = "speaker-name">
+                        Shayna Williams
+                    </a>
+                    <p class = "speaker-descr">
+                        Well-known for her satirical take on modern America, Shayna Williams has been described by the <i>NY Times</i>
+                        as the next Kurt Vonnegut.  Her recent novel, <i>A Rose by Any Other Name is a Weed</i>, has earned her acclaim
+                        from numerous outlets, including the <i>Chicago Tribune</i> which praised the novel as "achingly truthful while
+                        maintaining a light-hearted edge".
+                    </p>
+                </article>
+            </section>
+        </div>
+    </div>
+{% endblock %}

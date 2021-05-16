@@ -1,0 +1,1086 @@
+/* CSS for entire Website and index.html page*/
+body, html{
+    width:100%;
+    height:100%;
+}
+nav{
+    background:#1d2951;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navitem{
+    float: left;
+    color:#ffb347;
+    display: block;
+    text-align: center;
+    padding: 14pt 16pt;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.navitem:hover{
+    color: #00aae4;
+}
+body{
+    background:#fffafa;
+}
+footer{
+    background:#1d2951;
+    color:#ffb347;
+    font-family: 'Merriweather', serif;
+    text-align:center;
+}
+.email{
+    color:#ffb347;
+    text-decoration:none;
+}
+.email:hover{
+    color: #00aae4;
+}
+
+h1{
+    color:#838996;
+    font-family: 'Merriweather', serif;
+    font-size: 36pt;
+}
+.conf-date{
+    font-family: 'Lora', serif;
+    font-size: 20pt;
+    color:#191970;
+    font-weight:bold;
+}
+.flex-container-1{
+    background:#dcdcdc;
+    width: 98%;
+    min-height: 300px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+    flex-wrap: wrap;
+}
+.flex-child-1{
+    padding: 10pt;
+    -webkit-flex: 45%; /* Safari */
+    -ms-flex: 45%; /* IE 10 */
+    flex: 45%; /* Standard syntax */
+}
+.conference-img{
+    height:300pt;
+    width:675px;
+    border: 5px solid #191970;
+}
+.workshop-h{
+    font-family: 'Lora', serif;
+    font-size: 20pt;
+    color:#191970;
+    font-weight:bold;
+}
+.workshop-registration-h{
+    font-family: 'Lora', serif;
+    font-size: 16pt;
+    color:#191970;
+    font-weight:bold;
+}
+.workshop-p{
+    font-family: 'Merriweather', serif;
+    font-size:14pt;
+}
+.workshop-link{
+    font-family: 'Merriweather', serif;
+    font-size:13pt;
+}
+.workshop-button{
+    text-decoration:none;
+    width: 145px;
+    padding:30pt 0 30pt;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-size:14pt;
+    font-weight: 600;
+    margin: 4% 2% 10%;
+    cursor: pointer;
+    display: inline-block;
+    color: #ffb347;
+    border: 3px solid #191970;
+    background-image: -webkit-linear-gradient(30deg, #191970 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #191970 50%, transparent 50%);
+    background-size: 500pt;
+    background-repeat: no-repeat;
+    background-position: 0;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.workshop-button:hover{
+    background-position: 100%;
+    color: #191970;
+}
+
+.flex-child-2{
+    padding: 10pt;
+    -webkit-flex: 45%; /* Safari */
+    -ms-flex: 45%; /* IE 10 */
+    flex: 45%; /* Standard syntax */
+}
+.about-p{
+    font-family: 'Merriweather', serif;
+    font-size:14pt;
+}
+.registration-h{
+    font-family: 'Lora', serif;
+    font-size: 20pt;
+    color:#191970;
+    font-weight:bold;
+}
+.registration-p{
+    font-family: 'Merriweather', serif;
+    font-size:14pt;
+}
+.registration-link-h{
+    font-family: 'Lora', serif;
+    font-size: 16pt;
+    color:#191970;
+    font-weight:bold;
+}
+.registration-link-p{
+    font-family: 'Merriweather', serif;
+    font-size:13pt;
+}
+.registration-button{
+    text-decoration:none;
+    width: 145px;
+    padding:30pt 0 30pt;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-size:14pt;
+    font-weight: 600;
+    margin: 4% 2% 10%;
+    cursor: pointer;
+    display: inline-block;
+    color: #ffb347;
+    border: 3px solid #191970;
+    background-image: -webkit-linear-gradient(30deg, #191970 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #191970 50%, transparent 50%);
+    background-size: 500pt;
+    background-repeat: no-repeat;
+    background-position: 0;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.registration-button:hover{
+    background-position: 100%;
+    color: #191970;
+}
+.flex-container-2{
+    background:#dcdcdc;
+    width: 98%;
+    min-height: 300px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+}
+.attendee-h{
+    font-family: 'Lora', serif;
+    font-size: 24pt;
+    color:#191970;
+    font-weight:bold;
+}
+.attendee-p{
+    font-family: 'Merriweather', serif;
+    font-size:14pt;
+}
+.email-attendee{
+    color:#191970;
+    text-decoration:none;
+}
+.email-attendee:hover{
+    color:#00aae4;
+}
+.attendee-pamphlet{
+    color:#191970;
+    text-decoration:none;
+}
+.attendee-pamphlet:hover{
+    color:#00aae4;
+}
+.flex-container-3{
+    background:#dcdcdc;
+    width: 98%;
+    min-height: 300px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+}
+.authors-h{
+    font-family: 'Lora', serif;
+    font-size: 30pt;
+    color:#191970;
+    font-weight:bold;
+    position:absolute;
+    right:41%;
+}
+.author-card-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin:  0 10pt;
+    padding-top:65pt;
+}
+.author-card{
+    width: 320px;
+    padding: 20pt;
+    margin: 10pt;
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+.author-card:hover{
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.15);
+}
+.author-card > img{
+    border-radius: 2px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+}
+.author-name{
+    font-family: 'Merriweather', serif;
+    font-size:18pt;
+}
+.author-bio{
+    font-family: 'Merriweather', serif;
+    font-size:12pt;
+}
+
+/* awards.html page CSS */
+.fake-author-crane{
+    border-radius: 12%;
+    height: 250px;
+    width: 240px;
+}
+.fake-author{
+    border-radius:12%;
+    height:230pt;
+    width:250px;
+}
+.fake-author-crane:hover{
+    filter: grayscale(90%);
+    transition:0.8s;
+}
+.fake-author:hover{
+    filter: grayscale(90%);
+    transition:0.8s;
+}
+
+.short-story{
+    font-family: 'Merriweather', serif;
+    border-collapse: collapse;
+    width:100%;
+}
+.short-story td, .short-story th {
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+.short-story tr:nth-child(even){
+    background-color: white;
+}
+.short-story tr:nth-child(odd) {
+    background-color:#f0f8ff;
+}
+.short-story th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#191970 ;
+    color: white;
+}
+.author-award{
+    margin-left:14%;
+    font-weight:bold;
+}
+.story-title{
+    text-align:center;
+}
+.story-descr{
+    text-align:center;
+}
+.award-tables{
+    flex:45%;
+    width:100%;
+}
+.short-story-h{
+    font-family: 'Lora', serif;
+    font-size: 28pt;
+    color:#191970;
+    font-weight:bold;
+}
+
+/*activities.html page css*/
+.activity-header{
+    font-family: 'Lora', serif;
+    font-size:20pt;
+    color:#191970;
+    font-weight:bold;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.activity-header:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.activity-header:hover:after {
+    width: 100%;
+    background: #191970;
+}
+
+.activity-list{
+    padding: 0;
+    position:relative;
+    list-style: none;
+    width:380px;
+    text-align:center;
+    margin-top:6%;
+}
+.activity-list :hover a:not(:hover) {
+    filter: blur(1px);
+}
+.activity-list-item{
+    margin-bottom: 1px;
+    transition: 0.5s;
+}
+.activity-list-item:hover {
+    transform: translateX(10px);
+}
+.activity-link{
+    position: relative;
+    display: inline-block;
+    padding: 10px 5px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: #191970;
+    text-decoration: none;
+}
+.activity-link:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #00aae4;
+    transition: 0.5s;
+    z-index: -1;
+}
+.activity-link:hover::before {
+    width: 100%;
+}
+.activities-video-h{
+    font-family: 'Lora', serif;
+    font-size: 30pt;
+    color:#191970;
+    font-weight:bold;
+    position:absolute;
+    left:100pt;
+}
+.activities-video-h:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.activities-video-h:hover:after {
+    width: 100%;
+    background: #191970;
+}
+.video-card-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin:  0 10pt;
+    padding-top:110pt;
+}
+.video-card{
+    width: 320px;
+    padding: 20pt;
+    margin: 10pt;
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+.video-card:hover{
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.15);
+}
+.video-card > img{
+    border-radius: 2px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+}
+.video-name{
+    font-family: 'Merriweather', serif;
+    font-size:18pt;
+    text-align:center;
+}
+iframe{
+    border:0;
+}
+
+/*meals.html page css*/
+.menu-img-1{
+    height:300pt;
+    width:400px;
+    margin-left:21%;
+}
+.menu-img-2{
+    height:400pt;
+    width:500px;
+    margin-left:12%;
+}
+.menu-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin:  0 10pt;
+    padding-top:110pt;
+}
+.menu-card{
+    width: 650px;
+    padding: 20pt;
+    margin: 10pt 0 0 70pt;
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+.menu-card:hover{
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.15);
+}
+.menu-card > img{
+    border-radius: 2px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+}
+.menu-name {
+    font-family: 'Lora', serif;
+    font-size: 32pt;
+    font-weight:bold;
+    text-align:center;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    left:33%;
+}
+.menu-name:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.menu-name:hover:after {
+    width: 100%;
+    background: #191970;
+}
+.meal-h{
+    font-family: 'Lora', serif;
+    font-size: 20pt;
+    font-weight:bold;
+    text-align:center;
+}
+.menu-p{
+    text-align:center;
+    font-family: 'Lora', serif;
+    font-style:italic;
+    font-size:14pt;
+}
+.menu-pricing{
+    width:100%;
+}
+.menu-price-h{
+    font-family: 'Lora', serif;
+    font-size: 30pt;
+    font-weight:bold;
+    text-align:center;
+    color:#191970;
+}
+.menu-price-h:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.menu-price-h:hover:after {
+    width: 15%;
+    background: #191970;
+}
+.menu-price-p{
+    text-align:center;
+    font-family: 'Lora', serif;
+    font-size:15pt;
+}
+
+/*keynote.html css*/
+.keynote-block{
+    width:100%;
+}
+.speaker-name{
+    font-family: 'Lora', serif;
+    font-size: 32pt;
+    font-weight:bold;
+    text-align:center;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    left:22%;
+}
+.speaker-name:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.speaker-name:hover:after {
+    width: 100%;
+    background: #191970;
+}
+.speaker-descr{
+    text-align:center;
+    font-family: 'Lora', serif;
+    font-size:15pt;
+}
+.keynote-speaker{
+    width:500px;
+    margin: 3% 11%;
+}
+.keynote-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin:  0 10pt;
+    padding-top:110pt;
+    position:relative;
+    bottom:8%;
+}
+.keynote-card{
+    width: 650px;
+    padding: 20pt;
+    margin:10pt 0 0 10pt;
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+.keynote-card:hover{
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.15);
+}
+.keynote-card > img{
+    border-radius: 2px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+/*workshopschedule.html css*/
+.img-column{
+    flex:30%;
+}
+.workshop-table{
+    margin-left:13.5%;
+    flex:45%;
+}
+.workshop-schedule-h{
+    font-family: 'Lora', serif;
+    font-size: 22pt;
+    margin-left:30%;
+    color:#191970;
+}
+.workshop-schedule{
+    font-family: 'Merriweather', serif;
+    font-size:13pt;
+    border-collapse: collapse;
+}
+.workshop-schedule td, .workshop-schedule th{
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+.workshop-schedule tr:nth-child(even){
+    background-color: white;
+}
+.workshop-schedule tr:nth-child(odd) {
+    background-color:#f0f8ff;
+}
+.workshop-schedule th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#191970 ;
+    color: white;
+}
+.workshop-img{
+    height:auto;
+    width:100%;
+    border: 1px solid lightslategray;
+}
+.workshop-block{
+    flex:30%;
+}
+.workshop-explanation-h{
+    font-family: 'Lora', serif;
+    font-size: 24pt;
+    text-align:center;
+    color:#191970;
+}
+.workshop-exclamation{
+    color:#191970;
+}
+.workshop-info-p{
+    text-align:center;
+    font-size:14pt;
+    font-family:'Lora', serif;
+}
+.workshop-price-h{
+    font-family: 'Lora', serif;
+    font-size: 16pt;
+    text-align:center;
+    color:#191970;
+}
+.workshop-price-p{
+    text-align:center;
+    font-family: 'Lora', serif;
+    font-size:13pt;
+}
+
+/*registration.html css*/
+.registration-form-h{
+    font-family: 'Lora', serif;
+    font-size: 20pt;
+    font-weight:200;
+    text-align:center;
+    color:#191970;
+}
+form.registration-form legend{
+    color:#191970;
+    padding:2pt;
+    margin-left: 14pt;
+    font-weight:bold;
+    font-size: 14pt;
+}
+form.registration-form{
+    background:white;
+    border: 2px solid #191970;
+    width:100%;
+}
+form.registration-form fieldset{
+    border:2px solid gray;
+}
+form.registration-form label{
+    padding:3pt;
+    font-family:'Lora', serif;
+    font-size:10pt;
+    font-weight:bolder;
+}
+.required{
+    float:right;
+}
+.registration-submit-button{
+    text-decoration:none;
+    border-radius:16%;
+    width: 145px;
+    padding:30pt 0 30pt;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-size:14pt;
+    font-weight: 600;
+    margin: 4% 35% 10%;
+    cursor: pointer;
+    display: inline-block;
+    color: #ffb347;
+    border: 3px solid #191970;
+    background-image: -webkit-linear-gradient(30deg, #191970 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #191970 50%, transparent 50%);
+    background-size: 500pt;
+    background-repeat: no-repeat;
+    background-position: 0;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.registration-submit-button:hover{
+    background-position: 100%;
+    color: #191970;
+}
+form.registration-form input[type=text]{
+    width:130px;
+}
+form.registration-form input[type=url]{
+    width:155px;
+}
+#personal-info{
+    transition: background-color 0.7s ease, box-shadow 0.6s linear;
+    background-color: white;
+    box-shadow: 0 0 0 0 #191970;
+    margin: 0.5em;
+}
+#personal-info:hover {
+    background-color:#e8f4f8;
+    color:#191970;
+    box-shadow: 0 0 0 5px #191970;
+}
+.row1:hover .reg-index{
+    transition: opacity 0.5s ease-in-out;
+    opacity:0;
+}
+#company-info{
+    transition: background-color 0.7s ease, box-shadow 0.6s linear;
+    background-color: white;
+    box-shadow: 0 0 0 0 #191970;
+    margin: 0.5em;
+}
+#company-info:hover{
+    background-color:lightgray;
+    color: #191970;
+    box-shadow: 0 0 0 5px #191970;
+}
+.row2:hover .reg-index{
+    transition: opacity 0.5s ease-in-out;
+    opacity:0;
+}
+.row3:hover .reg-index{
+    transition: opacity 0.5s ease-in-out;
+    opacity:0;
+}
+.row4:hover .reg-index{
+    transition: opacity 0.5s ease-in-out;
+    opacity:0;
+}
+#workshop-info{
+    transition: background-color 0.7s ease, box-shadow 0.6s linear;
+    background-color: white;
+    box-shadow: 0 0 0 0 #191970;
+    margin: 0.5em;
+}
+#workshop-info:hover{
+    background-color:#e8f4f8;
+    color:#191970;
+    box-shadow: 0 0 0 5px #191970;
+}
+.row5:hover .reg-index{
+    transition: opacity 0.5s ease-in-out;
+    opacity:0;
+}
+
+/* poll.html page css*/
+.poll-form-h{
+    font-family: 'Lora', serif;
+    font-size: 24pt;
+    font-weight:bolder;
+    text-align:center;
+    color:#191970;
+}
+form.poll-form legend{
+    color:#191970;
+    padding:2pt;
+    margin-left: 14pt;
+    font-weight:bold;
+    font-size: 22pt;
+}
+form.poll-form{
+    background:white;
+    border: 2px solid #191970;
+    width:100%;
+}
+form.poll-form fieldset{
+    border:2px solid gray;
+}
+form.poll-form label{
+    padding:3pt;
+    font-family:'Lora', serif;
+    font-size:12pt;
+    font-weight:bolder;
+}
+.poll-choice-btn{
+    text-decoration:none;
+    border-radius:16%;
+    width: 80px;
+    padding:8pt 0 8pt;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-size:10pt;
+    font-weight: 600;
+    margin: 1% 17% 3%;
+    cursor: pointer;
+    display: inline-block;
+    color: #ffb347;
+    border: 3px solid #191970;
+    background-image: -webkit-linear-gradient(30deg, #191970 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #191970 50%, transparent 50%);
+    background-size: 500pt;
+    background-repeat: no-repeat;
+    background-position: 0;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.poll-choice-btn:hover{
+    background-position: 100%;
+    color: #191970;
+}
+#vote-display-crane{
+    margin-left:110pt;
+    font-size:14pt;
+    font-weight:bolder;
+    font-family:'Quicksand', sans-serif;
+}
+#vote-display-mewberg{
+    margin-left:112pt;
+    font-size:14pt;
+    font-weight:bolder;
+    font-family:'Quicksand', sans-serif;
+}
+#vote-display-laghari{
+    margin-left:128pt;
+    font-size:14pt;
+    font-weight:bolder;
+    font-family:'Quicksand', sans-serif;
+}
+#vote-display-dickerson{
+    margin-left:112pt;
+    font-size:14pt;
+    font-weight:bolder;
+    font-family:'Quicksand', sans-serif;
+}
+.vote-msg{
+    text-align:center;
+    font-size:20pt;
+    font-weight:bolder;
+    font-family:'Quicksand', sans-serif;
+    color:#191970;
+}
+/*thankyou.html css*/
+.checkmark-img{
+    height:100pt;
+    width:125px;
+}
+.thankyou-card {
+    width: 780px;
+    height:850px;
+    margin: 8% auto;
+    background-color: white;
+    box-shadow: 0 5pt 20pt #555;
+}
+.thankyou-card-image {
+    margin:18pt 250pt;
+}
+.thankyou-card-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:16pt;
+    letter-spacing: 1pt;
+    color:#191970;
+    font-family: 'Merriweather', serif;
+    margin-left:17pt;
+}
+.thankyou-p{
+    text-align:center;
+    font-family: 'Merriweather', serif;
+    margin-left:13pt;
+}
+.registrant-info{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:16pt;
+    letter-spacing: 1pt;
+    color:#191970;
+    font-family: 'Merriweather', serif;
+}
+.reg-info-span{
+    margin-left:22%;
+    font-family: 'Merriweather', serif;
+}
+.reg-conf{
+    margin-left:20%;
+    font-family: 'Merriweather', serif;
+}
+.thankyou-email{
+    text-decoration:none;
+    color:black;
+}
+.thankyou-color{
+    color:#191970;
+}
+.thankyou-color:hover{
+    color:limegreen;
+}
+.home-renav{
+    text-decoration:none;
+    color:black;
+}
+.home-renav:hover{
+    color:limegreen;
+}
+
+/*Admin Page CSS*/
+.nametag-h{
+    font-family: 'Lora', serif;
+    font-size: 24pt;
+    font-weight:200;
+    position:relative;
+    left:42%;
+    color:#191970;
+}
+.nametag-block{
+    position:absolute;
+    top:25%;
+    left:38.5%;
+}
+.nametag-link{
+    color:#191970;
+    font-size:18pt;
+    text-decoration:none;
+}
+.nametag-link:hover{
+    color:#ffb347;
+    border:1px solid black;
+    background:#191970;
+}
+
+/*List Page CSS*/
+.list-form-h{
+    font-family: 'Lora', serif;
+    font-size: 20pt;
+    font-weight:200;
+    text-align:center;
+    color:#191970;
+}
+form.list-form legend{
+    color:#191970;
+    padding:2pt;
+    margin-left: 14pt;
+    font-weight:bold;
+    font-size: 14pt;
+}
+form.list-form{
+    background:white;
+    border: 2px solid #191970;
+    width:62%;
+    margin-left:15%;
+}
+form.list-form fieldset{
+    border:2px solid gray;
+}
+form.list-form label{
+    padding:3pt;
+    font-family:'Lora', serif;
+    font-size:10pt;
+    font-weight:bolder;
+}
+.list-submit-btn{
+    text-decoration:none;
+    border-radius:16%;
+    width: 145px;
+    padding:30pt 0 30pt;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-size:14pt;
+    font-weight: 600;
+    margin: 4% 42% 10%;
+    cursor: pointer;
+    display: inline-block;
+    color: #ffb347;
+    border: 3px solid #191970;
+    background-image: -webkit-linear-gradient(30deg, #191970 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #191970 50%, transparent 50%);
+    background-size: 500pt;
+    background-repeat: no-repeat;
+    background-position: 0;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.list-submit-btn:hover{
+    background-position: 100%;
+    color: #191970;
+}
+.returned-list{
+    font-family: 'Quicksand', sans-serif;
+    font-size:18pt;
+}
+.returned-list-h{
+    font-family: 'Lora', serif;
+    font-size: 32pt;
+    font-weight:200;
+    color:#191970;
+}
+.list-container:empty{
+    display:none;
+}
+.list-container{
+    display:block;
+    background:white;
+    width:40%;
+    margin-left:25%;
+    border:2px solid #191970;
+    text-align:center;
+}
+
+/*Login Page CSS*/
+.login-form{
+    width:80%;
+}
+.login-label{
+    font-family: 'Quicksand', sans-serif;
+}
+.login-btn{
+    color:#ffb347;
+    background:#191970;
+    font-family: 'Quicksand', sans-serif;
+    margin-left:13%;
+}
+.login-btn:hover{
+    color:#191970;
+    background:#ffb347;
+}
+
+/*media queries responsive css*/
+@media (max-width: 800px) {
+    .flex-child-1, .flex-child-2 {
+        flex: 100%;
+    }
+}
+@media (max-width:800px){
+}
+@media (max-width:800px){
+    .award-tables{
+        flex:100%;
+    }
+}
+@media(max-width:800px){
+    .activity-list{
+        margin-top:0;
+    }
+
+}

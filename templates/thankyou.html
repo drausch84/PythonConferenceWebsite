@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Thank You{% endblock %}
+{% block content %}
+    <h1>
+        Denver Writer's Conference Registration Complete
+    </h1>
+    <div class = "flex-container-1">
+            <div class = "thankyou-card">
+                <div class = "thankyou-card-image">
+                    <img src="{{ url_for('static', filename='images/checkmark.gif') }}" alt = "checkmark" class = "checkmark-img">
+                </div>
+                <div class = "thankyou-card-body">
+                    <div class = "thankyou-card-title">
+                        Thank You for Registering {{ first_name }} {{ last_name }}!
+                    </div>
+                    <div class = "thankyou-card-p">
+                        <p class = "thankyou-p">
+                        <br>
+                            Your registration is complete.  Please review that the information entered is correct:<br><br>
+                            <h2 class = "registrant-info">{{ first_name }} {{ last_name }}'s Information:</h2>
+                            <span class = "reg-info-span">Street Address Line 1:  </span>{{ street_address_1 }}<br>
+                            <span class = "reg-info-span">Street Address Line 2:  </span>{{ street_address_2 }}<br>
+                            <span class = "reg-info-span">City:  </span>{{ city }}<br>
+                            <span class = "reg-info-span">State:  </span>{{ state }}<br>
+                            <span class = "reg-info-span">Zip Code:  </span>{{ zip_code }}<br>
+                            <span class = "reg-info-span">Phone Number:  </span>{{ phone_num }}<br>
+                            <span class = "reg-info-span">Email:  </span>{{ email }}<br>
+                            <span class = "reg-info-span">Employer:  </span>{{ employer }}<br>
+                            <span class = "reg-info-span">Company Website:  </span>{{ company_website }}<br>
+                            <span class = "reg-info-span">Job Position:  </span>{{ job_position }}<br>
+                            <span class = "reg-info-span">Session 1 Workshop Choice:  </span>{{ session_1_workshop }}<br>
+                            <span class = "reg-info-span">Session 2 Workshop Choice:  </span>{{ session_2_workshop }}<br>
+                            <span class = "reg-info-span">Session 3 Workshop Choice:  </span>{{ session_3_workshop }}<br>
+                            <br>
+                            <br>
+                            <span class = "reg-conf">
+                                A confirmation email will be sent shortly.
+                            </span><br>
+                            <span class = "reg-conf">
+                                If you have any additional questions, be sure to email us <a href = "mailto:DenverConventionCenter@fakeemail.com" class = "thankyou-email">
+                                <b class = "thankyou-color">here.</b></a>
+                            </span>
+                            <br>
+                            <span class = "reg-conf">
+                                <a href = "{{ url_for('home') }}" class = "home-renav">Back to Homepage</a>
+                            </span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+{% endblock %}

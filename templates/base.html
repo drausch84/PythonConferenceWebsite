@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--    Name: David Rausch
+        Assignment: CS336 Assignment #4
+        Date Created: March 13, 2021
+        Description: Template html page used for 8 pages of conference website assignment. -->
+<html lang="en">
+<head>
+    {% block head %}
+    <meta name = "keywords" content = "writers, meals, keynote, workshops, registration">
+    <meta name = "description" content = "Website for a writer's conference">
+    <meta name = "author" content = "David Rausch">
+    <meta name = "robots" content = "noindex">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/webdefault.css') }}"/>
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+{% block header %}
+    <header>
+        {% include "nav.html" %}
+    </header>
+{% endblock %}
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+{% block footer %}
+    <footer>
+        <address>
+            <p>
+                <small>
+                    700 14th St<br>
+                    Denver, CO 80202<br>
+                    Telephone Number:
+                    (303)-333-3333<br>
+                    Email:
+                    <a href = "mailto:DenverConventionCenter@fakeemail.com" class ="email">DenverConventionCenter@fakeemail.com</a>
+                </small>
+            </p>
+            While this web site was created to satisfy the requirement of
+            building a web site for an academic course at Regis University,<br>
+            the views and opinions expressed on this web site are solely those of
+            the original author and do not necessarily represent<br>
+            the views and opinions of Regis University.
+        </address>
+    </footer>
+{% endblock %}
+{% block scripts %}{% endblock %}
+</body>
+</html>

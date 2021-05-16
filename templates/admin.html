@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Admin Page{% endblock %}
+{% block content %}
+    <h1>
+        Perform Administrative Tasks
+    </h1>
+    <div class = "flex-container-1">
+        <p class ="nametag-block">
+            <a href = "{{ url_for('nametags8') }}" class = "nametag-link" target = "_blank">Create 8 Name Tags</a>
+            <br>
+            <br>
+            <br>
+            <a href = "{{ url_for('nametags10') }}" class = "nametag-link" target = "_blank">Create 10 Name Tags</a>
+            <br>
+            <br>
+            <br>
+            <a href = "{{ url_for('lists') }}" class = "nametag-link">Lists</a>
+        </p>
+
+    </div>
+{% endblock %}

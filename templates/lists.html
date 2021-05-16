@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Lists{% endblock %}
+{% block content %}
+<div class = "flex-container-1">
+    <br>
+    <form class = "list-form" id = "listForm" action="http://127.0.0.1:5000/lists" method = "POST">
+        <h2 class = "list-form-h">
+            Choose A List of Registrants
+        </h2>
+        <fieldset class = "row1" id = "workshop-list">
+            <legend class = "list-index">
+                Get Full List of Registrants or Registrants Based on Workshops or Mealplans
+            </legend>
+            <p class = "workshop-registrants">
+                <input type = "radio" id = "successful-short-story" name = "registrant-choice" value = "successful-short-story"/>
+                    <label for = "successful-short-story">
+                        How to Write A Successful Short Story
+                    </label>
+                <input type = "radio" id = "descriptive-settings" name = "registrant-choice" value = "descriptive-settings"/>
+                    <label for = "descriptive-settings">
+                        Learn How to Write Descriptive Settings
+                    </label>
+                <input type = "radio" id = "resolution-conflict" name = "registrant-choice" value = "resolution-conflict"/>
+                    <label for = "resolution-conflict">
+                        Establishing Conflict and Resolution in Stories
+                    </label>
+                <br>
+                <br>
+                <input type = "radio" id = "comedy-writing" name = "registrant-choice" value = "comedy-writing"/>
+                    <label for = "comedy-writing">
+                        The Art of Comedic Writing
+                    </label>
+                <input type = "radio" id = "poetry-writing" name = "registrant-choice" value = "poetry-writing"/>
+                    <label for = "poetry-writing">
+                        Fundamentals of Writing Poetry
+                    </label>
+                <input type = "radio" id = "char-development" name = "registrant-choice" value = "char-development"/>
+                    <label for = "char-development">
+                        Character Development: Creating Memorable Characters
+                    </label>
+                <br>
+                <br>
+                <input type = "radio" id = "fiction-writing" name = "registrant-choice" value = "fiction-writing"/>
+                    <label for = "fiction-writing">
+                        Fundamentals of Writing Fiction
+                    </label>
+                <input type = "radio" id = "plot-structure" name = "registrant-choice" value = "plot-structure"/>
+                    <label for = "plot-structure">
+                        How to Plot and Structure a Novel
+                    </label>
+                <input type = "radio" id = "mystery-novel" name = "registrant-choice" value = "mystery-novel"/>
+                    <label for = "mystery-novel">
+                        The Art of the Mystery Novel
+                    </label>
+                <br>
+                <br>
+                <input type = "radio" id = "mealpack" name = "registrant-choice" value = "mealpack"/>
+                    <label for = "mealpack">
+                        Meal Package
+                    </label>
+                <input type = "radio" id = "day-2-dinner" name = "registrant-choice" value = "day-2-dinner"/>
+                    <label for = "day-2-dinner">
+                        Day 2 Dinner Only
+                    </label>
+                <input type = "radio" id = "full-registrant-list" name = "registrant-choice" value = "full-registrant-list"/>
+                    <label for = "full-registrant-list">
+                        Full Registrant List
+                    </label>
+            </p>
+        </fieldset>
+    </form>
+    <button type = "submit" form = "listForm" value = "Submit" class = "list-submit-btn">
+        Submit
+    </button>
+</div>
+    <h1 class = "returned-list-h">
+        {{ list_h }}
+    </h1>
+    <div class = "list-container">
+        <p>
+            <span class = "returned-list">
+                {% for registrant in registrant_list %}
+                {{ registrant["first_name"] }}
+                {{ registrant["last_name"] }}<br>
+                {% endfor %}
+            </span>
+        </p>
+    </div>
+{% endblock %}

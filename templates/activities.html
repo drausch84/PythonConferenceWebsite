@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %}Activities{% endblock %}
+{% block content %}
+    <h1>
+        Activities Around Denver
+    </h1>
+    <div class = "flex-container-1">
+        <div class = "flex-child-1">
+            <img src="{{url_for('static',filename = 'images/downtowndenver.gif')}}" alt = "downtown-denver-pic">
+        </div>
+            <ul class = "activity-list">
+                <h2 class = "activity-header">
+                    Things to Do
+                </h2>
+                <li class = "activity-list-item">
+                    <a href = "https://www.denverartmuseum.org/en" class = "activity-link" target = "_blank">
+                        Denver Art Museum
+                    </a>
+                </li>
+                <li class = "activity-list-item">
+                    <a href = "https://greatdivide.com" class = "activity-link" target = "_blank">
+                        Great Divide Brewery Tour
+                    </a>
+                </li>
+                <li class = "activity-list-item">
+                    <a href = "https://www.mlb.com/rockies" class = "activity-link" target = "_blank">
+                        Colorado Rockies Tickets
+                    </a>
+                </li>
+                <li class = "activity-list-item">
+                    <a href = "https://www.botanicgardens.org" class = "activity-link" target = "_blank">
+                        Denver Botanic Gardens
+                    </a>
+                </li>
+                <li class = "activity-list-item">
+                   <a href = "https://denverzoo.org" class = "activity-link" target = "_blank">
+                       Denver Zoo
+                   </a>
+                </li>
+                <li class = "activity-list-item">
+                    <a href = "https://rinoartdistrict.org" class = "activity-link" target = "_blank">
+                        RiNo Art District
+                    </a>
+                </li>
+                <li class = "activity-list-item">
+                    <a href = "https://www.redrocksonline.com" class = "activity-link" target = "_blank">
+                        Red Rocks Amphitheatre
+                    </a>
+                </li>
+            </ul>
+    </div>
+    <br>
+    <div class = "flex-container-2">
+        <br>
+        <h2 class = "activities-video-h">
+            Check Out The Fun Denver Has To Offer
+        </h2>
+        <div class = "flex-child-2">
+        <section class = "video-card-row">
+            <article class = "video-card">
+                <iframe width="320" height="300" src="https://www.youtube.com/embed/xyjRFFpgG3o"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+                </iframe>
+                <h3 class = "video-name">
+                    Denver Art Museum
+                </h3>
+            </article>
+            <article class = "video-card">
+                <iframe width="320" height="300" src="https://www.youtube.com/embed/MB8EakbdtOQ"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+                </iframe>
+                <h3 class = "video-name">
+                    Red Rocks Amphitheatre
+                </h3>
+            </article>
+            <article class = "video-card">
+                <iframe width="320" height="300" src="https://www.youtube.com/embed/Am6yZq9ZcDU"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <h3 class = "video-name">
+                    Denver Botanic Gardens
+                </h3>
+            </article>
+            <article class = "video-card">
+                <iframe width="320" height="300" src="https://www.youtube.com/embed/CSkSCfX5flk"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <h3 class = "video-name">
+                    RiNo Art District
+                </h3>
+            </article>
+        </section>
+        </div>
+    </div>
+    <br>
+{% endblock %}

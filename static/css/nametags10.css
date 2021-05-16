@@ -1,0 +1,38 @@
+/*Name Tags 10 CSS*/
+.nametag-page{
+    margin: 15mm 30mm 15mm 30mm;
+}
+.nametag-row{
+    display:flex;
+    width:98%;
+}
+.left-nametag{
+    border: dotted lightgray;
+    width:76mm;
+    height:50mm;
+}
+.right-nametag{
+    border: dotted lightgray;
+    width:76mm;
+    height:50mm;
+}
+.fullname{
+    font-size:22pt;
+    font-weight:bolder;
+    color:green;
+    text-align:center;
+}
+.position{
+    font-size:12pt;
+    font-weight:bolder;
+    color:red;
+    text-align:center;
+}
+.company{
+    font-size:12pt;
+    text-align:center;
+}
+.citystate{
+    font-size:12pt;
+    text-align:center;
+}

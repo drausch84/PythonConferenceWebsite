@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %}Meals{% endblock %}
+{% block content %}
+    <h1>
+        Denver Writer's Conference Catering and Meals
+    </h1>
+    <div class = "flex-container-1">
+        <section class = "menu-row">
+            <article class = "menu-card">
+                <img src="{{ url_for('static', filename='images/menu1.png') }}" alt = "menu-img-1"
+                    class = "menu-img-1">
+                <a class = "menu-name">
+                    Menu Day 1
+                </a>
+                <h2 class = "meal-h">
+                    Breakfast
+                </h2>
+                <p class = "menu-p">
+                    Crepes, Fruit Bowl, Pastries, Choice of Beverage
+                </p>
+                <h2 class = "meal-h">
+                    Lunch
+                </h2>
+                <p class = "menu-p">
+                    Caesar Salad, Tomato Caprese Panini, Choice of Beverage
+                </p>
+                <h2 class = "meal-h">
+                    Dinner
+                </h2>
+                <p class = "menu-p">
+                    Parmesean Crusted Salmon, Roasted Asparagus, Choice of Beverage
+                </p>
+                <h2 class = "meal-h">
+                    Beverages
+                </h2>
+                <p class = "menu-p">
+                    Water, Tea, Soda, Coffee, Fresh Juice, Beer & Wine (extra cost)
+                </p>
+            </article>
+            <article class = "menu-card">
+                <img src="{{ url_for('static', filename='images/menu2.png') }}" alt = "menu-img-2"
+                    class = "menu-img-2">
+                <a class = "menu-name">
+                    Menu Day 2
+                </a>
+                <h2 class = "meal-h">
+                    Breakfast
+                </h2>
+                <p class = "menu-p">
+                    Biscuits & Gravy, Yogurt, Choice of Beverage
+                </p>
+                <h2 class = "meal-h">
+                    Lunch
+                </h2>
+                <p class = "menu-p">
+                    Tuna Melt Sandwich, Lentil & Bean Soup, Choice of Beverage
+                </p>
+                <h2 class = "meal-h">
+                    Dinner
+                </h2>
+                <p class = "menu-p">
+                    12 oz. Ribeye Steak, Yukon Gold Mashed Potatoes, Choice of Beverage
+                </p>
+                <h2 class = "meal-h">
+                    Beverages
+                </h2>
+                <p class = "menu-p">
+                    Water, Tea, Soda, Coffee, Fresh Juice, Beer & Wine (extra cost)
+                </p>
+            </article>
+        </section>
+    </div>
+    <div class = "flex-container-2">
+        <div class = "menu-pricing">
+            <h2 class = "menu-price-h">
+                Menu Pricing
+            </h2>
+            <p class = "menu-price-p">
+                Full Meal Package:&nbsp; $250.00<br>
+                    (includes Dinner Day 2)<br>
+                Dinner Day 2:&nbsp; $75.00
+            </p>
+        </div>
+    </div>
+{% endblock %}

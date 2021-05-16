@@ -1,0 +1,67 @@
+{% block content %}
+    <div class = "flex-container-2">
+        <form action = "/awards" class = "poll-form" id = "poll-award" method = "POST">
+            <h2 class = "poll-form-h">
+                Author Award Nominees
+            </h2>
+            <p class = "vote-msg">
+                {{ thankyoumsg }}
+            </p>
+            <fieldset class = "row1" id = "short-story-nom">
+                <legend>
+                    Best Short Story
+                </legend>
+                <p class = "poll-info">
+                    <label>
+                        Nominees (Author):
+                    </label>
+                    <p class = "poll-nom">
+                        <input type = "radio" class = "vote-count" id = "john-crane" name = "author-nom" value = "Johnathan Crane" required/>
+                        <label for = "john-crane">
+                            Johnathan Crane
+                        </label>
+                        <span id = "vote-display-crane">
+                                <span class="total-votes">0</span> Total Votes
+                        </span>
+                    </p>
+                    <p class = "poll-nom">
+                        <input type = "radio" class = "vote-count" id = "rachel" name = "author-nom" value = "Rachel Mewberg"
+                              required/>
+                        <label for = "rachel">
+                            Rachel Mewberg
+                        </label>
+                        <span id = "vote-display-mewberg">
+                            <span class="total-votes">0</span> Total Votes
+                        </span>
+                    </p>
+                    <p class = "poll-nom">
+                        <input type = "radio" class = "vote-count" id = "anika" name = "author-nom" value = "Anika Laghari"
+                              required/>
+                        <label for = "anika">
+                            Anika Laghari
+                        </label>
+                        <span id = "vote-display-laghari">
+                            <span class="total-votes">0</span> Total Votes
+                        </span>
+                    </p>
+                    <p class = "poll-nom">
+                        <input type = "radio" class = "vote-count" id = "justin" name = "author-nom" value = "Justin Dickerson"
+                              required/>
+                        <label for = "justin">
+                            Justin Dickerson
+                        </label>
+                        <span id = "vote-display-dickerson">
+                            <span class="total-votes">0</span> Total Votes
+                        </span>
+                    </p>
+                <p>
+                    <button type = "submit" form = "poll-award" value = "Submit" class = "poll-choice-btn"
+                    id = "poll-submit">
+                        Submit
+                    </button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    <br>
+{% endblock %}

@@ -1,0 +1,42 @@
+/*Name Tags 8 CSS*/
+.nametag-page{
+    margin: 14mm 17mm 14mm 17mm;
+}
+.nametag-row{
+    display:flex;
+    width: 98%;
+}
+.left-nametag{
+    border: dotted lightgray;
+    width:86mm;
+    height:59mm;
+    margin: 0 9mm 4.5mm 0mm;
+}
+.right-nametag{
+    border: dotted lightgray;
+    width:86mm;
+    height:59mm;
+    margin: 0 9mm 4.5mm 0mm;
+}
+.firstname{
+    font-size:22pt;
+    font-weight:bolder;
+    text-align:center;
+}
+.lastname{
+    font-size:12pt;
+    text-align:center;
+}
+.position{
+    font-size:14pt;
+    font-weight:bolder;
+    text-align:center;
+}
+.company{
+    font-size:12pt;
+    text-align:center;
+}
+.citystate{
+    font-size:12pt;
+    text-align:center;
+}

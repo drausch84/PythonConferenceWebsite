@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+{% block title %}Workshop Schedule{% endblock %}
+{% block content %}
+    <h1>
+        Denver Writer's Conference Workshop Schedule
+    </h1>
+    <div class = "flex-container-1">
+        <div class = "workshop-block">
+            <h2 class = "workshop-explanation-h">
+                Hone Your Skills in Our Workshops
+            </h2>
+            <p class = "workshop-info-p">
+                Our workshops are where the magic happens!  Take advantage of the opportunity to receive advice and
+                critiques from our many participating experts.  Have you felt that your story's characters needed to be
+                fleshed out further? <b class ="workshop-exclamation">We have a workshop for that!</b> Have you felt that your mystery novel lacks tension?
+                <b class = "workshop-exclamation">We have a workshop for that!</b> Do you have a world in your mind that you want to share
+                with the rest of the world but are unable to find the words to give it detail? <b class = "workshop-exclamation">We have a workshop
+                for that!</b> We offer three different workshops in each session of the day for the Denver Writer's Conference, so be sure to
+                take a look at the workshop schedule to decide which workshop works best for you.
+            </p>
+            <h2 class = "workshop-price-h">
+                Workshop Price Plan
+            </h2>
+            <p class = "workshop-price-p">
+                <b>3 Session Plan:</b> $325<br>
+                <a href = "{{ url_for('registration') }}" class = "workshop-button">Sign Up</a>
+            </p>
+        </div>
+        <div class = "img-column">
+            <img src="{{ url_for('static', filename='images/workshop.gif') }}" alt = "workshop-img" class = "workshop-img">
+        </div>
+    </div>
+    <br>
+    <div class = "flex-container-2">
+        <div class = "workshop-table">
+            <h2 class = "workshop-schedule-h">
+                Workshop Schedule
+            </h2>
+            <table class = "workshop-schedule">
+                <tr>
+                    <th>
+                        Day
+                    </th>
+                    <th>
+                        Session
+                    </th>
+                    <th>
+                        Workshop Title
+                    </th>
+                    <th>
+                        Speaker
+                    </th>
+                    <th>
+                        Room
+                    </th>
+                    <th>
+                        Time
+                    </th>
+                </tr>
+                <tr>
+                    <td rowspan ="6">
+                        Day 1
+                    </td>
+                    <td rowspan = "3">
+                        Session 1
+                    </td>
+                    <td>
+                        How to Write A Successful Short Story
+                    </td>
+                    <td>
+                        Adolis Teague
+                    </td>
+                    <td>
+                        Room 12C
+                    </td>
+                    <td>
+                        10:00am - 12:30pm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Learn How to Write Descriptive Settings
+                    </td>
+                    <td>
+                        Gregory Hewitt
+                    </td>
+                    <td>
+                        Room 17B
+                    </td>
+                    <td>
+                        10:00am - 12:30pm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Establishing Conflict and Resolution in Stories
+                    </td>
+                    <td>
+                        Amanda Prescott
+                    </td>
+                    <td>
+                        Room 4E
+                    </td>
+                    <td>
+                        10:00am - 12:30pm
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan = "3">
+                        Session 2
+                    </td>
+                    <td>
+                        The Art of Comedic Writing
+                    </td>
+                    <td>
+                        Rachel Tobias
+                    </td>
+                    <td>
+                        Room 2A
+                    </td>
+                    <td>
+                        1:00pm - 3:30pm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fundamentals of Writing Poetry
+                    </td>
+                    <td>
+                        Sandra Vale
+                    </td>
+                    <td>
+                        Room 11D
+                    </td>
+                    <td>
+                        1:00pm - 3:30pm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Character Development: Creating Memorable Characters
+                    </td>
+                    <td>
+                        Jeffrey Stotch
+                    </td>
+                    <td>
+                        Room 14A
+                    </td>
+                    <td>
+                        1:00pm - 3:30pm
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan = "3">
+                        Day 2
+                    </td>
+                    <td rowspan = "3">
+                        Session 3
+                    </td>
+                    <td>
+                        Fundamentals of Writing Fiction
+                    </td>
+                    <td>
+                        Chester Williams
+                    </td>
+                    <td>
+                        Room 4C
+                    </td>
+                    <td>
+                        1:00pm - 3:30pm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        How to Plot and Structure a Novel
+                    </td>
+                    <td>
+                        Gina Wagham
+                    </td>
+                    <td>
+                        Room 2D
+                    </td>
+                    <td>
+                        1:00pm - 3:30pm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        The Art of the Mystery Novel
+                    </td>
+                    <td>
+                        Christina Kramme
+                    </td>
+                    <td>
+                        Room 11B
+                    </td>
+                    <td>
+                        1:00pm - 3:30pm
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+{% endblock %}

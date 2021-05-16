@@ -1,0 +1,15 @@
+<nav>
+    <a href = "{{ url_for('home') }}" class = "navitem">Home</a>
+    <a href = "{{ url_for('awards') }}" class = "navitem">Member Choice Awards</a>
+    <a href = "{{ url_for('activities') }}" class = "navitem">Local Activities</a>
+    <a href = "{{ url_for('meals') }}" class = "navitem">Meals</a>
+    <a href = "{{ url_for('keynote') }}" class = "navitem">Keynote Speakers</a>
+    <a href = "{{ url_for('workshop') }}" class = "navitem">Workshops</a>
+    <a href = "{{ url_for('registration') }}" class = "navitem">Registration</a>
+    {% if not logged_in %}
+        <a href = "{{ url_for('login') }}" class = "navitem">Login</a>
+    {% else %}
+        <a href = "{{ url_for('admin') }}" class = "navitem">Admin</a>
+        <a href = "{{ url_for('logout') }}" class = "navitem">Logout</a>
+    {% endif %}
+</nav>

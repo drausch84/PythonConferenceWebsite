@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block title %}Member Awards{% endblock %}
+{% block content %}
+    <h1>
+        Denver Writer's Conference Member Choice Awards
+    </h1>
+    <div class = "flex-container-1">
+       <div class = "award-tables">
+           <h2 class = "short-story-h">
+               Best Short Story:
+           </h2>
+           <table class = "short-story">
+               <tr>
+                   <th>
+                       Author
+                   </th>
+                   <th>
+                       Story Title
+                   </th>
+                   <th>
+                       Story Summary
+                   </th>
+               </tr>
+               <tr>
+                   <td>
+                       <img src="{{url_for('static',filename = 'images/johncrane.gif')}}" alt = "fake-author-1"
+                            class = "fake-author-crane">
+                       <p class= "author-award">
+                           Johnathan Crane
+                       </p>
+                   </td>
+                   <td class = "story-title">
+                       <i>
+                           The Beaver Pelts
+                       </i>
+                   </td>
+                   <td class = "story-descr">
+                       A terrifying short story about the price a father will pay to shape his son in<br> his own image by
+                       any means necessary.
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       <img src="{{url_for('static',filename = 'images/rachelmewberg.gif')}}" alt = "fake-author-2"
+                            class = "fake-author">
+                        <p class = "author-award">
+                            Rachel Mewberg
+                        </p>
+                   </td>
+                   <td class = "story-title">
+                        <i>
+                            Where My Heart Drifted Slowly
+                        </i>
+                   </td>
+                   <td class = "story-descr">
+                        A story that follows the everyday struggle of a single mother of four children who<br>
+                        begins to wax nostalgic over prior dreams of becoming an actress.
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       <img src ="{{ url_for('static', filename = 'images/anikalaghari.gif') }}" alt = "fake-author-3"
+                              class = "fake-author">
+                       <p class = "author-award">
+                           Anika Laghari
+                       </p>
+                   </td>
+                   <td class = "story-title">
+                       <i>
+                           The Withering Leaves
+                       </i>
+                   </td>
+                   <td class = "story-descr">
+                       A farmer outside Lachen in India discovers an ivory ox which his family<br>
+                       believes is an omen of things to come.
+                   </td>
+               </tr>
+
+               <tr>
+                   <td>
+                       <img src ="{{ url_for('static', filename = 'images/justindickerson.gif') }}" alt = "fake-author-4"
+                              class = "fake-author">
+                       <p class = "author-award">
+                           Justin Dickerson
+                       </p>
+                   </td>
+                   <td class = "story-title">
+                       <i>
+                           Broken Reflections
+                       </i>
+                   </td>
+                   <td class = "story-descr">
+                       After returning from a deployment in Iraq, a young man comes to terms<br>
+                       with who he's become and who he might still become.
+                   </td>
+               </tr>
+           </table>
+       </div>
+    </div>
+    <br>
+    <div class = "flex-container-2">
+        {% include "poll.html" %}
+    </div>
+{% endblock %}>
